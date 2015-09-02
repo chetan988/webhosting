@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+    <title>Form 1</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+</head>
+
+<body>
+<div>
+<form>
+<br /> <br />
+A Empty text box <br />
+syntax : &ltinput type="text" /&gt <br />
+output : <input type="text" />
+<br /> <br />
+A text box with populated value <br />
+syntax : &ltinput type="text" value="Chetan"/&gt <br />
+output : <input type="text" value="Chetan"/>
+<br /><br />
+A text box with place holder value<br />
+syntax : &ltinput type="text" placeholder="Chetan"/&gt <br />
+output : <input type="text" placeholder="Chetan"/>
+
+<br /><br />
+A text box for email with place holder value<br />
+syntax : &ltinput type="email" placeholder="chetan_das@yahoo.com"/&gt <br />
+output : <input type="email" placeholder="chetan_das@yahoo.com"/>
+<br /><br />
+
+A text box for password<br />
+syntax : &ltinput type="password"/&gt <br />
+output : <input type="password"/>
+<br /><br />
+
+<h3> TEXTAREA </h3>
+A Empty text area <br />
+syntax : &lttextarea&gt &lt/textarae&gt <br /><br />
+output : <textarea> </textarea> <br /> <br />
+
+A text area with populated text<br />
+syntax : &lttextarea&gt write your comment &lt/textarae&gt <br /><br />
+output : <textarea> write your comment </textarea> <br /> <br />
+
+<br />
+<h3> DROPDOWN </h3>
+
+syntax : <br />
+&ltselect&gt<br />
+&nbsp&nbsp&ltoption&gt select one option &lt/option&gt<br />
+&nbsp&nbsp&ltoption&gt India &lt/option&gt<br />
+&nbsp&nbsp&ltoption&gt USA &lt/option&gt<br />
+&nbsp&nbsp&ltoption&gt UK &lt/option&gt<br />
+&lt/select&gt
+<br /><br />
+output: <br />
+<select>
+	<option> select one option </option>
+	<option> India </option>
+	<option> USA </option>
+	<option> UK </option>
+</select>
+<br /><br />
+
+<h3> CHECKBOX </h3>
+
+syntax :<br /> 
+&ltinput type="checkbox"/&gt dog<br />
+&ltinput type="checkbox"/&gt cat<br />
+&ltinput type="checkbox"/&gt fish<br />
+&ltinput type="checkbox"/&gt cow<br />
+<br />
+output : <br />
+<input type="checkbox"/> dog<br />
+<input type="checkbox"/> cat<br />
+<input type="checkbox"/> fish<br />
+<input type="checkbox"/> cow<br />
+<br />
+
+<h3> RADIO BUTTON </h3>
+without group i.e all radio button selectable<br /><br />
+syntax : <br />
+&ltinput type="radio"/&gt married<br />
+&ltinput type="radio"/&gt unmarried<br /><br />
+output : <br />
+<input type="radio"/> married<br />
+<input type="radio"/> unmarried<br />
+
+<br />
+with group i.e only one button clickable<br /><br />
+syntax : <br />
+&ltinput type="radio" name="status"/&gt married<br />
+&ltinput type="radio" name="status"/&gt unmarried<br /><br />
+output : <br />
+<input type="radio" name="status"/> married<br />
+<input type="radio" name="status"/> unmarried<br />
+<br />
+<h3> SUBMIT BUTTON </h3>
+
+syntax : &ltinput type="submit" /&gt<br />
+output : <input type="submit" /><br />
+
+<br />Submit with customized click button <br />
+syntax : &ltinput type="submit" value="clicl me!"/&gt<br />
+output : <input type="submit" value="click me!" /><br />
+
+<br /> As we have not assigned any name and/or value to the input parameter so on pressing<br />
+button there is no effetct check out form2.html for some advance form design 
+</form>
+<br /><br />
+<a href="example.html"> prev page </a><br/><br /><br />
+<a href="form2.html"> next page </a><br/><br /><br />
+
+
+</div>
+</body>
+</html>

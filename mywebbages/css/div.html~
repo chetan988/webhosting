@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <title>css-3-div</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    div {
+		background:green;
+		font-size:130%;     
+    }
+    
+    .redbox {
+		background-color:red;    
+    }
+    
+    .bluebox {
+		background-color:blue; 
+		height:100px;   
+    }
+    
+    .bold {
+		font-weight:bold;    
+    }
+    </style>
+</head>
+<body>
+
+<p> Here we will learn about div. Div is logical separation of a web page. So we can divide a web page in various division by
+ putting div tag. It will create several rectangular division of pages. Lets see some example to understand the idea better way. </p>
+ 
+ Syntax : <br />
+ <u> simple div</u><br />
+ &ltdiv><br />
+ content....<br />
+ &lt/div><br /></br />
+ 
+ <u> div with style information </u><br />
+ 
+ &ltdiv class="normal_class"><br />
+ content....<br />
+ &lt/div><br /></br />
+
+Note : Here class is a normal class what we declared in previous section<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDiv are declared in the head part<br />
+<br />
+Example <br />
+
+&nbsp&nbsp&lthtml><br />
+&nbsp&nbsp&nbsp&nbsp&lthead><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltstyle type="text/css"><br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    div {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		background:green;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		font-size:130%;     <br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    .redbox {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		background-color:red;<br />    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    .bluebox {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    background-color:blue;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    height:100px;<br />    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.bold {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		font-weight:bold;<br />    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/style><br />
+&nbsp&nbsp&nbsp&nbsp&lt/head><br />
+&nbsp&nbsp&nbsp&nbsp&ltbody><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt div><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This is a default div, if no class attached then this div will trigger<br /> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt div class="redbox"><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This a div with redbox style class<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt div class="bluebox bold"><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp This a div with bluebox style class<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div><br /><br />
+
+
+&nbsp&nbsp&nbsp&nbsp&lt/body><br />
+&nbsp&nbsp&lt/html><br /><br />
+
+output : <br />
+
+	<div>
+		This is a default div, if no class attached then this div will trigger<br /> 
+	</div><br />
+
+	<div class="redbox">
+		This a div with bluebox style class<br />
+	</div><br />
+	
+	<div class="bluebox bold">
+		This a div with bluebox style class<br />
+	</div><br /><br />
+
+<a href="class_id.html"> prev page </a><br /><br />
+
+<a href="../index.html"> Home page </a><br /><br />
+
+ 
+</body>
+</html>

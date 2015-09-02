@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <title>css-4-float</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    div {
+		background:green;
+		font-size:130%;     
+    }
+    
+    .redbox {
+		background-color:red; 
+		height:200px;	
+		float:left;   
+    }
+    
+    .bluebox {
+		background-color:blue; 
+		height:200px;
+		float:right;
+    }
+    
+    .floatleft {
+		float:left;    
+    }
+    
+    .floatright {
+		float:right;    
+    }
+    
+    .clear {
+		clear:both;    
+    }
+    
+    </style>
+</head>
+<body>
+	<h4><u> Floating </u></h4>
+	<p> The formatting we created always appear one below another. What if we want to put the content in left or right margin? We can do that by float method. Float is a style parameter so added in the style description of the class</p>
+	<p> 	Syntax: <br />
+			float : left | right | clear<br /><br />
+			clear :both | left | right &nbsp&nbsp&nbsp  #=> clear the floatong effect<br /><br />
+			Example : <br /><br />
+			
+&nbsp&nbsp&lthtml><br />
+&nbsp&nbsp&nbsp&nbsp&lthead><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltstyle type="text/css"><br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    div {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		background:green;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		font-size:130%;     <br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    .redbox {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		background-color:red;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    height:100px;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		float:left;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    .bluebox {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    background-color:blue;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    float:right;<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    height:100px;<br />    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    .float {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    float:left;<br />    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    .floatright {<br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    float:right;<br />   
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp    }<br /><br />
+
+    
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/style><br />
+&nbsp&nbsp&nbsp&nbsp&lt/head><br />
+&nbsp&nbsp&nbsp&nbsp&ltbody><br /><br />
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt div class="redbox"><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp redbox <br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt div class="bluebox bold"><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp bluebox <br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/div><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp> This line will flow between redbox (on left) and bluebox (on the right)&lt/p><br /><br /> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp class="floatleft"> This line will float towards left&lt/p><br /><br />
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp class="floatright"> This line will float towards right&lt/p><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltdiv class="clear">&lt/div><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp> A new paragraph&lt/p><br /><br />
+
+&nbsp&nbsp&nbsp&nbsp&lt/body><br />
+&nbsp&nbsp&lt/html><br /><br />
+
+		Output : <br /><br />
+		
+<div class="redbox">
+redbox 
+</div>
+ 
+<div class="bluebox">
+ bluebox 
+	</div><br /><br />
+	<p>This line will flow between redbox (on left) and bluebox (on the right)</p>
+	<p class="floatleft"> This line will float towards left</p>
+	<p class="floatright"> This line will float towards right</p>
+	<div class="clear"></div>
+	<p> A new paragraph </p>
+	 </p><br /><br />
+	
+
+</body>
+</head>

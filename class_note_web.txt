@@ -1,0 +1,181 @@
+<!doctype html>			: tells browser type of page
+
+<html> 				: tag that tells browser the page start location
+</html>				: tag that tells browser the end of html.
+
+Mainly all the tags(e,g <html>) end with a closing tag (</html>)
+
+    <head>			: the place we usually declare all the information used throughout the page
+	<title>			: declared inside head. The content displyed on the tab
+        <meta ../>		: this does not required closing tag as closed itself. Meta used to declare html behavioral settings
+				  ex:
+				     <meta charset="utf-8" />	
+				     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />	
+				     <meta name="viewport" content="width=device-width, initial-scale=1" />	-- how page will look on device
+     <body>			: inside body we will write the logic or design
+        <h1>			: header <h1> to <h6> is applicable header , <h7> onwards html will ignore header and print normal paragraph
+	<p>			: paragraph
+
+* html ignores line break and multiple space
+
+<html>
+  <body>
+this is first line 
+this      is 2nd line
+  </body> 
+</html>
+
+Will result:
+
+this is first line this is 2nd line
+
+=> paragraph also write text after aline break but with huge gap.
+
+=> syntax to enter line break is <br> or </br> or <br/>
+
+
+<html>
+<br>line 1 <br> line 2 </br> line 3 <br/> line 4
+</html>
+
+will result:
+
+line 1
+line 2
+line 3
+line 4 
+
+LINE STYLE:
+===============
+bold : <b> or <strong>
+italic : <em> or <i>   em for emphasis
+underline : <u>
+strike : <strike>
+
+ex:
+
+<br/> This <strong> word </strong> is bold.
+<br/> This <em> word </em> is italic.
+<br/> This <u> word </u> is under lined.
+<br/> <strike> This line is striked out </strike> 
+
+output: format missing 
+
+This word is bold.
+This word is italic.
+This word is under lined.
+This line is striked out 
+
+================
+UNORDERED LIST:
+================
+
+TAG :	<ul>
+
+unorder list usually followed by list item tag that creates bullet points
+
+LIST ITEM TAG : <li>  
+
+ex:
+
+<ul>
+	<li> Sunday </li>
+	<li> Monday </li>
+	<li> Tuesday </li>
+	<li> Wednesday </li>
+	<li> Thursday </li>
+	<li> Friday </li>
+	<li> Saturday </li>
+</ul>
+ 
+ 
+ =======================
+ ordered list
+ =======================
+ TAG : <ol>
+ 
+ order list also followed by list item but in this case list item creates 1..n listing
+ 
+ ex:
+ 
+ <ol>
+	<li> Sunday </li>
+	<li> Monday </li>
+	<li> Tuesday </li>
+	<li> Wednesday </li>
+	<li> Thursday </li>
+	<li> Friday </li>
+	<li> Saturday </li>
+</ol>
+
+
+=======================
+adding image
+=======================
+
+TAG : <img src="<physical location or web url>" height="custom height" width="custom width" />
+
+example:
+
+<img src="image/funny.jpg" />
+<img src="image/funny.jpg" height="100" width="100"/>
+<br/>
+
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Twelve_monkeysmp.jpg/220px-Twelve_monkeysmp.jpg" />
+
+=========================
+form
+=========================
+
+tag : <form>
+
+different type of form parameter
+==================================
+
+text field : <input type="text" />
+	      <input type="text" value="type here..." />   # here "type here ..." will be the actual value prepopulate in the text box. usre has to delete to inter actual value
+	     <input type="text" placeholder="type here..." /> # here "type holder " will look like a water mark and disappear while click on it
+				 
+email id : <input type="email" />
+	    <input type="email" value="chetan_das@yahoo.com"/>
+	    <input type="email" placeholder="chetan_das@yahoo.com"/>
+password : <input type="password" />
+
+
+textarea : <textarea> </textarea>   # large textarea
+	    <textarea> what do you think about politics </textarea>
+
+dropdownlist :
+	<select>
+		<option> select one option </option>
+		<option> 	India	      </option>
+		<option>      USA          </option>
+		<option>      UK           </option>
+	</select>
+	
+radio button :
+	#with out grouping then all radio button is clickable
+	
+	ex: 
+	<input type="radio" /> married
+	<input type="radio" /> unmarried
+	
+	# we have to gropu it ex:
+	
+	<input type="radio" name="status" /> married
+	<input type="radio" name="status" /> unmarried
+	
+checkbox:
+
+	<input type="checkbox" /> dog
+	<input type="checkbox" /> cat
+	<input type="checkbox" /> fish
+	<input type="checkbox" /> cow
+
+submit button:
+	<input type="submit" />
+	<input type="submit" value="click me!"/>  # to change the text in submit button
+	
+
+ 
+

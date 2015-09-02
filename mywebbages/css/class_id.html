@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+    <title>css-2</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    .large {
+		font-size:130%;    
+    }
+    
+    .bold {
+		font-weight:bold;    
+    }
+    
+    .underline {
+		text-decoration:underline;    
+    }
+    
+    #green {
+		color:green;    
+    }
+    </style>
+</head>
+
+<body>
+<div>
+   <p> In previous page we saw we can add style to all paragraph through css. But what if we want different style for one paragraph and another style for another paragraph. Well css provide that option too. We can use class and id to do that.</p>
+   <p> Now what is a class and id. class is set of css style rules bundle and attached to a class name. A class can be applied many times in one page. Similarly in id we can add multiple css style rule but conventionally id used only once in a page.</p>
+   <p> lets see some example </p>
+   <h4><u> class</u> </h4>
+   	<p> syntax : 
+   	&nbsp&nbsp&nbsp&nbsp. class name { <br />
+   	&nbsp&nbsp&nbsp&nbsp para1:val1;para2:val2;para3:val3;<br />					
+   	&nbsp&nbsp				}<br />
+   	
+   <h4><u> id </u> </h4>
+   	&nbsp&nbsp&nbsp&nbsp# id name { <br />
+   	&nbsp&nbsp&nbsp&nbsp para1:val1;para2:val2;para3:val3;<br />					
+   	&nbsp&nbsp				}<br />
+   	
+   	<br /> Example using both <br /><br />
+   &nbsp&nbsp&lthtml><br />
+   &nbsp&nbsp&nbsp&nbsp&lthead><br /><br />
+   &nbsp&nbsp&nbsp&nbsp&ltstyle type="css/text"><br />
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.large {<br />
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	font-size:130%;<br />    
+   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<br />
+    
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.bold {<br />
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	font-weight:bold;<br />    
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  }<br />
+    
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp.underline {<br />
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	text-decoration:underline;<br />    
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}<br />
+    
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp#green {<br />
+	 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp	color:green;    <br />
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}<br />
+    &nbsp&nbsp&nbsp&nbsp&lt/style><br />
+    &nbsp&nbsp&nbsp&nbsp&lt/head><br />
+    
+    &nbsp&nbsp&nbsp&nbsp&ltbody><br />
+    
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp class="large"> This line contain only one style class &lt/p><br />
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp id="green" class="underline"> Css id applied to this line &lt/p> <br />
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp class="large underline"> This line has two class &lt/p><br />
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&ltp> We can use &ltspan class="bold large"> span to &lt/span> add style to certain words &lt/p><br />  
+	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt/body><br />
+	&nbsp&nbsp&nbsp&nbsp&lt/html><br /><br />
+	
+	output : <br /><br />
+		<p class="large"> This line contain only one style class </p>
+		<p id="green" class="underline"> Css id applied to this line </p>
+		<p class="large underline"> This line has two class </p>
+		<p> We can use <span class="bold large"> span to </span> add style to certain words </p>
+		
+Note : <br />
+** More than one class can be used with space separated list<br />
+** ID applied only once on a page <br />
+** you can use id and class together <br />
+** span tag is used to apply the style in between the paragraph<br /><br />
+
+
+<a href="intro.html"> prev page </a><br /><br />
+<a href="div.html"> next page </a><br /><br />
+<a href="../index.html"> Home page </a><br /><br />
+
+ 
+		
+	
+</div>
+</body>
+</html>

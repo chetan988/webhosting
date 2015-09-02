@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <title>Form 2</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+</head>
+
+<body>
+<div>
+<a name="top" />
+Different form input methods we saw in the previous chapter do not pass any information while pressing submit button <br />
+We have to associate each input method to a nave and/or value to pass the choosen/input value for backend processing<br />
+We will see how we can use different cgi methods to handle the input values <br />
+
+<form>
+	<h3> EMAIL TEXT INPUT</h3>
+	syntax : &ltinput type="email" name="login" /&gt <br />
+ 	output : <input type="email" name="login" placeholder="type yor ligin email"/><br /><br />
+ 	
+ 	NOTE: while pressing submit see the address bar now we are passing input value associate with the name <br />
+ 	ex: file:///home/chetan/study/webhosting/mywebbages/html/form2.html?login=chetan_das%40yahoo.com <br />
+ 	NOTE: the '@' sign is converted to '%40' so that predefined html processing will not be confussed<br />
+ 	
+ 	Same concept applicable for text area<br /><br />
+ 	
+ 	<h3> DROPDOWN </h3>
+ 	syntax :<br />
+ 	&ltselect name="citizenship"&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption> citizenship &lt/option&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption&gt INDIA &lt/option&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption&gt US &lt/option&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption&gt UK &lt/option&gt<br />
+ 	&lt/select&gt<br /><br /> 	
+ 	output : <br />
+ 	<select name="citizenship">
+ 		<option> </option>
+ 		<option> INDIA </option>
+ 		<option> US </option>
+ 		<option> UK </option>
+ 	</select><br /><br />
+ 	
+ 	
+ 	analysis : <br />
+ 	This is the address bar while pressing submit with out selecting any value<br/>
+ 	&nbsp&nbspfile:///home/chetan/study/webhosting/mywebbages/html/form2.html?login=&citizenship=<br />
+ 	input text : chetan@fake.com<br />
+ 	dropdown   : INDIA<br />
+ 	addressbar value : file:///home/chetan/study/webhosting/mywebbages/html/form2.html?login=chetan_das%40yahoo.com&citizenship=INDIA<br /><br />
+ 	=> We can pass different value instead of selected value to bacl\kend service<br />
+ 	this helps to pass customized value for back end evaluation <br />
+ 	example :<br />
+ 	syntax :<br />
+ 	&ltselect name="citizenship_2"&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption value=0> citizenship &lt/option&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption value=1&gt INDIA &lt/option&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption value=2&gt US &lt/option&gt<br />
+ 	&nbsp&nbsp&nbsp&ltoption value=3&gt UK &lt/option&gt<br />
+ 	&lt/select&gt<br /><br /> 	
+ 	output : <br />
+ 	<select name="citizenship_2">
+ 		<option value=0> </option>
+ 		<option value=1> INDIA </option>
+ 		<option value=2> US </option>
+ 		<option value=3> UK </option>
+ 	</select><br /><br />
+ 	
+ 	NOTE : now while selecting india the address bar html will pass 1 instr\ead of INDIA this may ease the backend processing<br /> 
+ 	text input  : NULL<br />
+ 	first dropdown: US <br/>
+ 	second input : INDIA <br/>
+ 	 Note the citizenship_2 value passed as 1 not india : file:///home/chetan/study/webhosting/mywebbages/html/form2.html?login=&citizenship=US&citizenship_2=1<br /> <br/>
+ 
+ 	
+ 	<h3> RADIO BUTTON </h3>
+ 	syntax : <br />
+ 	&ltinput type="radio" name="status" value='m'/&gt married<br />
+ 	&ltinput type="radio" name="status" value='u'/&gt unmarried<br />
+ 	<br />
+ 	output : <br />
+ 	<input type="radio" name="status" value='m'/> married<br />
+ 	<input type="radio" name="status" value='u'/> unmarried<br />
+ 	
+ 	<br />
+ 	analysis: when clicked married status=m will be passed when clicked unmarried status=u will be passed <br />
+ 	ex: file:///home/chetan/study/webhosting/mywebbages/html/form2.html?login=&citizenship=&citizenship_2=0&status=u<br /><br/>
+ 
+ <h3> CHECKBOX </h3>
+ 	syntax : <br />
+ 	&ltinput type="checkbox" name="pet" value='d'/&gt dog<br />
+  	&ltinput type="checkbox" name="pet" value='c'/&gt cat<br />
+ 	&ltinput type="checkbox" name="pet" value='f'/&gt fish<br />
+ 	<br />
+ 	output : <br />
+ 	<input type="checkbox" name="pet" value='d'/> dog<br />
+ 	<input type="checkbox" name="pet" value='c'/> cat<br />
+ 	<input type="checkbox" name="pet" value='f'/> fish<br />
+ 	
+ 	<br />
+ 	analysis: when check options it will pass name=value pair like pet=d&pet=f if dog and fish are checked <br />
+ 	ex: file:///home/chetan/study/webhosting/mywebbages/html/form2.html?login=&citizenship=&citizenship_2=0&pet=d&pet=f<br /><br/>
+ 
+ 	<input type="submit" value="login" />	
+
+</form><br /><br />
+
+	<h3> <u>WORKING WITH LINK </u></h3>
+	tag : &lta href="<link location >"&gt some description ... &lt/a&gt
+	<p> there are below type link exist </p>
+	<ul>
+		<li> Internal : link to pages exist inside same server</li>
+		<li> External : link to pages exist outside server</li>
+		<li> Inpage : Link inside the page itself</li>
+	</ul>
+	<h4> INTERNAL LINK </h4>
+	syntax : &lta href="helloworld.html"&gt click me to go hellowrold page &lt/a&gt<br />
+	output : <a href="helloworld.html"> click me to go hellowrold page </a><br />
+	<h4> EXTERNAL LINK </h4>
+	syntax : &lta href="google.com"&gt click me to go google home page &lt/a&gt<br />
+	output : <a href="http://www.google.com"> click me to go google home page </a><br />
+	<h4> INPAGE LINK </h4>
+	<p> Inpage links are created to travel in the same page </p>
+	<p> So we create a inpage tag location where the page will jump while clicked on the link</p>
+	<p> Then we will create a link on wwhick user will click </p>
+	syntax for tag : &lta name="top" /&gt : this tag will be created at the top of page where page should jump<br/>
+	syntax for link : &lta href="#top"&gt click me to go top of this page &lt/a&gt<br />
+	output : <a href="#top"> click me to go top of this page </a><br /><br/>
+	
+	<a href="form1.html"> prev page </a>
+	<br /><br />
+	<a href="table.html"> next page </a>
+	<br /><br />
+	<a href="../index.html"> Home </a><br/>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <title>css</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+</head>
+
+<body>
+<div>
+	<p> <abbr> CSS </abbr> : cascade style sheet <br />
+		css is used to add more visual effect to html<br /><br />
+		Let us start the learning process <br /> </p>
+
+<p> css code can be Embeded in the applicable tags to change their apperance.<br >
+	This method call inline css. This is not recomended becuse there are lot of cool stuff that can be done.<br /><br />
+	Lets start with example. </p>
+	
+	<p> Tag : &ltp <em> style="parameter1:value1;parameter2:value2;..." </em> > paragraph content &lt/p><br />
+		example :<br/>
+		&nbsp&nbsp &ltp> This line is with out style &lt/p><br /><br />
+		&nbsp&nbsp &ltp> style="color:blue;font-size:150%"> This line is with style &lt/p><br />
+		output :
+		&nbsp&nbsp <p> This line is with out style </p>
+		&nbsp&nbsp <p style="color:blue;font-size:150%"> This line is with style</p></p>
+
+		<p> Disadvantage of inline css 
+			<ul>
+				<li> In source page both the content and style sheet will be written which will make the code hard to read </li>
+				<li> If we have 500 paragraph so we will have 500 style sheet code to make them look similar </li>
+				<li> In latter stage if we want to make a small change on paragraph we have to do it in all 500 places</li>
+			</ul>
+		To over come above disadvantage we have <b><em>internal css</em></b>.<br />
+		 
+		<ul>
+			<li> The Internal css are usually added in the head tag</li>
+			<li> They are created with tag so when a perticular tag gets added the attached css also get effective </li>
+			<li> Chang the css at one place it will effect thoughout the page </li>	
+		</ul>
+		Lets take a simple example :<br />
+		&lthtml><br />
+		&nbsp&nbsp&lthead><br />
+		&nbsp&nbsp&nbsp&nbsp&ltstyle type="css/text"><br />
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp {<br />
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp color:red;<br />
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<br />
+		&nbsp&nbsp&nbsp&nbsp&lt/style><br />
+		&nbsp&nbsp&lt/head><br /><br />
+		&nbsp&nbsp&ltbody><br />
+		&nbsp&nbsp&nbsp&nbsp&ltp> This is line 1.&lt/p><br />
+		&nbsp&nbsp&nbsp&nbsp&ltp> This is line 2.&lt/p></br>
+		&nbsp&nbsp&lt/body><br />
+		&lt/html><br /><br />
+		output : <br />
+		<p style="color:red">  This is line 1.</p><br />
+		<p style="color:red">  This is line 2.</p><br /><br />
+		If we will make the color to green it will affect all the paragraph<br /><br />
+		&lthtml><br />
+		&nbsp&nbsp&lthead><br />
+		&nbsp&nbsp&nbsp&nbsp&ltstyle type="css/text"><br />
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp {<br />
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp color:green;<br />
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp }<br />
+		&nbsp&nbsp&nbsp&nbsp&lt/style><br />
+		&nbsp&nbsp&lt/head><br /><br />
+		&nbsp&nbsp&ltbody><br />
+		&nbsp&nbsp&nbsp&nbsp&ltp> This is line 1.&lt/p><br />
+		&nbsp&nbsp&nbsp&nbsp&ltp> This is line 2.&lt/p></br>
+		&nbsp&nbsp&lt/body><br />
+		&lt/html><br /><br />
+		output : <br />
+		<p style="color:green">  This is line 1.</p><br />
+		<p style="color:green">  This is line 2.</p><br /><br />
+		
+		</p><br /><br />
+		<a href="class_id.html"> next page </a><br /><br />
+
+		<a href="../index.html"> Home page </a><br /><br />
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+    <title>my first page</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+</head>
+
+<body>
+<div>
+<h3>HEADER</h3>
+<p>6 size of header are allowed in the html</p> 
+syntax : &lth1&gt HEADER 1 &lt/h1&gt<br />
+output :  <h1> HEADER 1 </h1><br />
+syntax : &lth2&gt HEADER 2 &lt/h2&gt<br />
+output :  <h2> HEADER 2 </h2>
+syntax : &lth3&gt HEADER 3 &lt/h3&gt<br />
+output :  <h3> HEADER 3 </h3><br />
+syntax : &lth4&gt HEADER 4 &lt/h4&gt<br />
+output : <h4> HEADER 4 </h4><br />
+syntax : &lth5&gt HEADER 5 &lt/h5&gt<br />
+output : <h5> HEADER 5 </h5><br />
+syntax : &lth6&gt HEADER 6 &gt/h6&lt<br />
+output : <h6> HEADER 6 </h6><br />
+syntax : &lth7&gt THIS LINE ACTUALLY DECLARED AS H7 HEADER BUT LOOKS LIKE SIMPLE PARAGRAPH BECAUSE H1-6 IS SUPPORTED &lt/h7&gt</br>
+output : <h7> THIS LINE ACTUALLY DECLARED AS H7 HEADER BUT LOOKS LIKE SIMPLE PARAGRAPH BECAUSE H1-6 IS SUPPORTED </h7></br>
+
+<p> HTML ignore normal line breaks and multiple spaces </p>
+syntax : <br />
+
+this is first line<br /> 
+this&nbsp&nbsp&nbsp&nbspis 2nd line<br >
+
+output : <br />
+this is first line 
+this      is 2nd line
+
+<p> line break can be added by using below syntax </p>
+&ltbr&gt  :  this is not a valid line break in xhtml <br />
+&lt/br&gt <br />
+&ltbr /&gt : recomennded<br /><br />
+syntax : <br />
+&ltbr&gtline 1 &ltbr&gt line 2 &lt/br&gt line 3 &ltbr/&gt line 4 &ltbr/&gt<br />
+output : <br />
+<br>line 1 <br> line 2 </br> line 3 <br/> line 4 <br/>
+
+<h3> FORMATTING on html </h3>
+<h4> BOLD </h4>
+tag : &ltstrong&gt word...&lt/strong&gt<br />
+syntax :  This &ltstrong&gt word &lt/strong&gt is bold. <br />
+output: <br/> This <strong> word </strong> is bold.<br />
+<h4>ITALIC(EMPHASIS)</h4>
+tag : &ltem&gt word ... &lt/em&gt<br />
+syntax : This &ltem&gt word &lt/em&gt is italic.<br />
+output : <br/> This <em> word </em> is italic.<br />
+<h4> UNDERLINE </h4>
+tag : &ltu&gt word ...&ltu&gt<br />
+syntax : <br/> This &ltu&gt word &lt/u&gt is under lined.<br />
+output : <br/> This <u> word </u> is under lined.
+<h4>STRIKE </h4>
+tag : &ltstrike&gt word ... &ltstrike&gt<br />
+syntax : &ltstrike&gt This line is striked out &lt/strike&gt <br />
+output : <br/> <strike> This line is striked out </strike> <br/>
+
+<h3> UNSORTED LIST </h3>
+<p>Unsorted list represented as bullet points </p>
+tag : 
+&ltul&gt   #unsortedlist<br />
+&nbsp&nbsp&ltli&gt list1..&lt/li&gt   #ListItem<br />
+&nbsp&nbsp&ltli&gt list2..&lt/li&gt  <br />
+&nbsp&nbsp ....<br />
+&lt/ul&gt<br />
+
+syntax : <br />
+week days &ltbr /&gt
+&ltul&gt
+	&nbsp&nbsp&nbsp&ltli&gt Sunday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Monday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Tuesday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Wednesday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Thursday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Friday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Saturday &lt/li&gt<br />
+&lt/ul&gt<br />
+
+output : <br />
+week days <br />
+<ul>
+	<li> Sunday </li>
+	<li> Monday </li>
+	<li> Tuesday </li>
+	<li> Wednesday </li>
+	<li> Thursday </li>
+	<li> Friday </li>
+	<li> Saturday </li>
+</ul>
+ <br/>
+ <h3> ORDERED LIST </h3>
+ tag : 
+&ltol&gt   #orderedlist<br />
+&nbsp&nbsp&ltli&gt list1..&lt/li&gt   #ListItem<br />
+&nbsp&nbsp&ltli&gt list2..&lt/li&gt  <br />
+&nbsp&nbsp ....<br />
+&lt/ol&gt<br />
+
+syntax : <br />
+week days <br />
+&ltol&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Sunday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Monday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Tuesday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Wednesday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Thursday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Friday &lt/li&gt<br />
+	&nbsp&nbsp&nbsp&ltli&gt Saturday &lt/li&gt<br />
+&lt/ol&gt<br />
+
+output : <br />
+week days <br />
+<ol>
+	<li> Sunday </li>
+	<li> Monday </li>
+	<li> Tuesday </li>
+	<li> Wednesday </li>
+	<li> Thursday </li>
+	<li> Friday </li>
+	<li> Saturday </li>
+</ol>
+<br /> <br />
+
+<h3><u> IMAGE </u></h3>
+tag : &ltimg src="<image source>" width="<number>" height="<number>" /&gt<br
+src - source , source can be internal or external<br/>
+width and height are in pixel to adjust picture size <br /><br/>
+
+<h4> INTERNAL IMAGE </h4>
+<p>Image present on local machine/server. You can give absolute path or patch from CWD </p>
+syntax : &ltimg src="image/funny.jpg" /&gt<br />
+output : <br/>
+<img src="image/funny.jpg" /><br/>
+<h4> Making some adjustment </h4>
+syntax : &ltimg src="image/funny.jpg" height="100" width="100"/&gt<br/>
+output :<br/>
+<img src="image/funny.jpg" height="100" width="100"/>
+<br/>
+<h4> EXTERNAL IMAGE </h4>
+<p> Image from other server. Accessed throght http </p>
+syntax : &ltimg src="http://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Twelve_monkeysmp.jpg/220px-Twelve_monkeysmp.jpg" /&gt<br/>
+output : <br />
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/c/cf/Twelve_monkeysmp.jpg/220px-Twelve_monkeysmp.jpg" /><br /><br />
+<a href="form1.html"> next page </a><br/>
+<a href="../index.html"> Home </a><br/>
+
+</div>
+</body>
+</html>
+

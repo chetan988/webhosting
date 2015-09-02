@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>iframe</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+      
+</head>
+
+<body>
+<div>
+<h3> IFRAME </h3>
+<p> iframe is used to embade other sites content into used page</p>
+<p> youtube videos can be embeded in other web pages on http protocol</p>
+
+tag: &ltiframe src="source page"> &lt/iframe><br />
+syntax : &ltiframe src="helloworld.html"> &lt/iframe><br />
+output :<br />  <iframe src="helloworld.html"> </iframe><br />
+<br />
+
+<p> inserting a youtube video to page but it will not work because we are not using http protocol locally </p>
+<iframe width="560" height="315" src="//www.youtube.com/embed/pfHxl46KyZM" frameborder="0" allowfullscreen></iframe><br /></br>
+<a href="table.html"> prev page </a><br /><br />
+
+
+</div>
+</body>
+</html>
